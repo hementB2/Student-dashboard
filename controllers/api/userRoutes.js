@@ -32,7 +32,7 @@ router.post('/login', async (req, res) => {
     if (!validPassword) {
       res
         .status(400)
-        .json({ message: 'Incorrect email or password, please try again' }); // Ambigious
+        .json({ message: 'Incorrect email or password, please try again' }); // Ambigious in case a hacker is trying to log in 
       return;
     }
 

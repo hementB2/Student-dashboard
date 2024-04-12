@@ -15,7 +15,7 @@ const seedDatabase = async () => {
   for (const project of projectData) {
     await Project.create({
       ...project,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
+      user_id: users[Math.floor(Math.random() * users.length)].id, // Random assignment of the projects 
     });
   }
 

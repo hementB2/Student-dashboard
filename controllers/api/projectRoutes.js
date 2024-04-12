@@ -2,14 +2,14 @@ const router = require('express').Router();
 const { Project } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-router.post('/', withAuth, async (req, res) => {
+router.post('/', withAuth, async (req, res) => { // Here is the post (from profile.js) (Yours will be very similar for the Project)
   try {
-    const newProject = await Project.create({
+    const newProject = await Project.create({ // You will probably do Profile.create
       ...req.body,
-      user_id: req.session.user_id, // session is global
+      user_id: req.session.user_id, // Session is global
     });
 
-    res.status(200).json(newProject);
+    res.status(200).json(newProject); // This can be "Success!" or whatever you want for your project
   } catch (err) {
     res.status(400).json(err);
   }
