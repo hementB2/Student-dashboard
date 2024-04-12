@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Hement",
+    "email": "hement@hotmail.com",
+    "password": "12345",
+    "course": "Psychology",
+    "courseDetails": "Clinical Psychology, Cognition, Perception, Developmental"
+  },
+  {
+    "name": "Rubal",
+    "email": "rubal@hotmail.com",
+    "password": "67890",
+    "course": "Business",
+    "courseDetails": "Economics, Accounting, Statistics, Human Resources"
+  },
+  {
+    "name": "Sheryl Lawrence",
+    "email": "sheryl@hotmail.com",
+    "password": "246810",
+    "course": "Sociology",
+    "courseDetails": "Social Change, Gender Identity, Sociology of Familes, Crime and Deviance"
+  }
+]
